@@ -8,4 +8,4 @@
     <meta name="description" content="<?= $meta_description ?>">
 </head>
 <body>
-<div class="container">
+<?= $this->renderSection("body") ?>

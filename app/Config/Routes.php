@@ -34,6 +34,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+$routes->get("result", "Result::index");
+$routes->post("result", "Result::json");
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

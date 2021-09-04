@@ -50,6 +50,5 @@
     <footer>
         <?= $footer_content; ?>
     </footer>
-    </div>
 </body>
 </html>

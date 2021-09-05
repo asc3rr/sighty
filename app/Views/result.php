@@ -19,8 +19,6 @@ foreach($places as $place){
     </div>
     ENDL;
 }
-
-// TODO: sprawdzić więcej pozycji. Zmienić routing z `result`, dodać grupę `places` a w niej `places/result`
 ?>
 </div>
 <?= $this->endSection(); ?>

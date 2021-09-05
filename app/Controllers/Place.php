@@ -20,7 +20,7 @@ class Place extends BaseController
             "keywords" => "Random keyword",
             "meta_title" => "$place_name - Sighty",
             "meta_description" => $place_description,
-            "title" => "Places - Sighty Results",
+            "title" => "$place_name - Sighty",
             "footer_content" => "&copy All rights reserved for asc3rr",
             "place" => $result
         ];

@@ -4,9 +4,31 @@ namespace App\Controllers;
 
 use App\Models\Places;
 
-class Result extends BaseController
+class Place extends BaseController
 {
-	public function index()
+    public function index(){
+        $id = $_GET["id"];
+
+        $model = new Places();
+
+        $result = $model->find($id);
+        
+        $place_name = $result["place_name"];
+        $place_description = $result["place_description"];
+
+        $data = [
+            "keywords" => "Random keyword",
+            "meta_title" => "$place_name - Sighty",
+            "meta_description" => $place_description,
+            "title" => "Places - Sighty Results",
+            "footer_content" => "&copy All rights reserved for asc3rr",
+            "place" => $result
+        ];
+
+        return view('place', $data);
+    }
+
+	public function result()
 	{
         $latitude = $_GET["latitude"];
         $longitude = $_GET["longitude"];

@@ -35,7 +35,6 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 $routes->get("result", "Result::index");
-$routes->post("result", "Result::json");
 
 /*
  * --------------------------------------------------------------------

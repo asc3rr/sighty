@@ -14,12 +14,12 @@ class Place extends BaseController
         $result = $model->find($id);
         
         $place_name = $result["place_name"];
-        $place_description = $result["place_description"];
+        $place_short = base64_decode($result["place_shortdesc"]);
 
         $data = [
             "keywords" => "Random keyword",
             "meta_title" => "$place_name - Sighty",
-            "meta_description" => $place_description,
+            "meta_description" => $place_short,
             "title" => "$place_name - Sighty",
             "footer_content" => "&copy All rights reserved for asc3rr",
             "place" => $result

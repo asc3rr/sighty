@@ -2,7 +2,7 @@
 
 <?= $this->section("content"); ?>
 <h1 class="display-4 text-center"><?= $title ?></h1>
-<form class="text-center" action="result/" method="get">
+<form class="text-center" action="/places/result" method="get">
     <div class="form-group" id="latidute">
         <label for="latitude">Latitude:</label>
         <input id="latitude" name="latitude" type="text" pattern="^-?([0-8]?[0-9]|90)(\.[0-9]{1,10})$" placeholder="Latitude">

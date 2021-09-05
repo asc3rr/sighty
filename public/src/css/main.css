@@ -2,6 +2,11 @@
     background-color: orangered;
 }
 
+.place-desc{
+    margin-top: 2.5%;
+    font-size: 125%;
+}
+
 main{
     margin-top: 2.5%;
 }

@@ -7,7 +7,7 @@
 
     <meta name="keywords" content="<?= $keywords ?>">
 
-    <!-- <link rel="icon" href="src/img/logo.png"> -->
+    <link rel="icon" href="<?= $_ENV["cover_img"]; ?>">
 
     <title><?= $meta_title ?></title>
     <meta name="description" content="<?= $meta_description ?>">

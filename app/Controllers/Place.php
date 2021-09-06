@@ -6,9 +6,7 @@ use App\Models\Places;
 
 class Place extends BaseController
 {
-    public function index(){
-        $id = $_GET["id"];
-
+    public function index($id){
         $model = new Places();
 
         $result = $model->find($id);

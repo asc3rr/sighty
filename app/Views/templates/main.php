@@ -39,7 +39,7 @@
                         <a class="nav-link" href="https://github.com/asc3rr/sighty">Developers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contribute/">Contribute</a>
+                        <a class="nav-link" href="/contribute/">Contribute</a>
                     </li>
                 </ul>
             </div>

@@ -25,7 +25,7 @@ class Place extends BaseController
             "place" => $result
         ];
 
-        return view('place', $data);
+        return view('place/place', $data);
     }
 
 	public function result()
@@ -44,7 +44,7 @@ class Place extends BaseController
             "places" => $places
         ];
 
-		return view('result', $data);
+		return view('place/result', $data);
 	}
 
     public function getPlaces($latitude, $longitude){

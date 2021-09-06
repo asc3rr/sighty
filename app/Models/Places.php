@@ -14,7 +14,7 @@ class Places extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ["latitude", "longitude", "place_name", "place_description", "author"];
+    protected $allowedFields = ["latitude", "longitude", "place_name", "place_shortdesc", "place_description", "author"];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

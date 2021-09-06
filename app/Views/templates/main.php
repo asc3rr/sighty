@@ -38,6 +38,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="dev/">Developers</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contribute/">Contribute</a>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -1,7 +1,6 @@
 <?= $this->extend("templates/main"); ?>
 
 <?= $this->section("content"); ?>
-<h1 class="display-4 text-center"><?= $title ?></h1>
 <form class="text-center" action="/places/result" method="get">
     <div class="form-group" id="latidute">
         <label for="latitude">Latitude:</label>

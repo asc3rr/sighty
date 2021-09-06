@@ -39,6 +39,11 @@ $routes->group("places", function($routes){
 	$routes->add("result", "Place::result");
 });
 
+$routes->group("contribute", function($routes){
+	$routes->get("edit/(:num)", "Contribute::edit_view/$1");
+	$routes->post("edit", "Contribute::edit");
+});
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

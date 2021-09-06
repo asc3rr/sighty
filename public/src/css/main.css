@@ -5,6 +5,9 @@
 .place-desc{
     margin-top: 2.5%;
     font-size: 125%;
+
+    background-color: #bbb;
+    padding: 1%;
 }
 
 main{

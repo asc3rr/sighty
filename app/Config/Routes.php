@@ -34,9 +34,11 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->add("places/(:num)", "Place::index/$1");
+$routes->get("all", "Home::get_all");
+
+$routes->get("places/(:num)", "Place::index/$1");
 $routes->group("places", function($routes){
-	$routes->add("result", "Place::result");
+	$routes->get("result", "Place::result");
 });
 
 $routes->group("contribute", function($routes){

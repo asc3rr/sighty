@@ -13,7 +13,7 @@ foreach($places as $place){
             <div class="card-body">
                 <h5 class="card-title">$place_name</h5>
                 <p class="card-text text-wrap">$place_description</p>
-                <a href="/places/id=$place_id" class="btn btn-primary">See more</a>
+                <a href="/places/$place_id" class="btn btn-primary">See more</a>
             </div>
         </div>
     </div>

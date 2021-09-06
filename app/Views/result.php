@@ -5,7 +5,7 @@
 foreach($places as $place){
     $place_id = $place["id"];
     $place_name = $place["place_name"];
-    $place_description = base64_decode($place["place_description"]);
+    $place_description = base64_decode($place["place_shortdesc"]);
 
     echo <<<ENDL
     <div class="col-sm-6">

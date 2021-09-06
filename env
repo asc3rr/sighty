@@ -125,8 +125,9 @@
 # logger.threshold = 4
 
 #--------------------------------------------------------------------
-# APIs
+# Headers and footers
 #--------------------------------------------------------------------
 
-# geocoding_base_url = ""
-# geocoding_key = ""
+# keywords = ''
+# title = ''
+# footer = ''

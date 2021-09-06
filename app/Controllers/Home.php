@@ -9,11 +9,11 @@ class Home extends BaseController
 	public function index()
 	{
 		$data = [
-			"keywords" => "Random keyword",
+			"keywords" => $_ENV["keywords"],
 			"meta_title" => "Search Panel - Sighty",
 			"meta_description" => "Search Panel - Sighty",
 			"title" => "Search Panel",
-			"footer_content" => "&copy All rights reserved for asc3rr"
+			"footer_content" => $_ENV["footer"]
 		];
 
 		return view('search_page', $data);
@@ -25,11 +25,11 @@ class Home extends BaseController
 		$places = $model->findAll();
 
 		$data = [
-			"keywords" => "Random keyword",
+			"keywords" => $_ENV["keywords"],
 			"meta_title" => "All places - Sighty",
 			"meta_description" => "All places - Sighty",
 			"title" => "All Places",
-			"footer_content" => "&copy All rights reserved for asc3rr",
+			"footer_content" => $_ENV["footer"],
 			"places" => $places
 		];
 

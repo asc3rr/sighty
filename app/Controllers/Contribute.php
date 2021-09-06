@@ -9,11 +9,11 @@ class Contribute extends BaseController
 	public function index()
 	{
 		$data = [
-			"keywords" => "Random keyword",
+			"keywords" => $_ENV["keywords"],
 			"meta_title" => "Contribution Panel - Sighty",
 			"meta_description" => "Contribution Panel - Sighty",
 			"title" => "Contribution Panel",
-			"footer_content" => "&copy All rights reserved for asc3rr"
+			"footer_content" => $_ENV["footer"]
 		];
 
 		return view('contribute/index', $data);
@@ -46,11 +46,11 @@ class Contribute extends BaseController
         $place = $model->find($id);
 
         $data = [
-			"keywords" => "Random keyword",
+			"keywords" => $_ENV["keywords"],
 			"meta_title" => "Editing Panel - Sighty",
 			"meta_description" => "Editing Panel - Sighty",
 			"title" => "Editing Panel",
-			"footer_content" => "&copy All rights reserved for asc3rr",
+			"footer_content" => $_ENV["footer"],
             "place" => $place
 		];
 

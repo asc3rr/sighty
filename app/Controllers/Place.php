@@ -15,11 +15,11 @@ class Place extends BaseController
         $place_short = base64_decode($result["place_shortdesc"]);
 
         $data = [
-            "keywords" => "Random keyword",
+            "keywords" => $_ENV["keywords"],
             "meta_title" => "$place_name - Sighty",
             "meta_description" => $place_short,
             "title" => "$place_name",
-            "footer_content" => "&copy All rights reserved for asc3rr",
+            "footer_content" => $_ENV["footer"],
             "place" => $result
         ];
 
@@ -34,11 +34,11 @@ class Place extends BaseController
         $places = $this->getPlaces($latitude, $longitude);
 
         $data = [
-            "keywords" => "Random keyword",
+            "keywords" => $_ENV["keywords"],
             "meta_title" => "Places - Sighty Results",
             "meta_description" => "Places results for Lat: $latitude and Lng: $longitude",
             "title" => "Places - Sighty Results",
-            "footer_content" => "&copy All rights reserved for asc3rr",
+            "footer_content" => $_ENV["footer"],
             "places" => $places
         ];
 

@@ -47,6 +47,9 @@
     </nav>
     <main>
         <div class="container">
+            <h3 class="display-4 text-center">
+                <?= $title; ?>
+            </h3>
             <?= $this->renderSection("content"); ?>
         </div>
     </main>

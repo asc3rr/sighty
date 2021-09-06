@@ -53,8 +53,8 @@
             <?= $this->renderSection("content"); ?>
         </div>
     </main>
-    <footer>
-        <?= $footer_content; ?>
+    <footer class="footer" role="contentinfo">
+        <span class="text-muted"><?= $footer_content; ?></span>
     </footer>
 </body>
 </html>
